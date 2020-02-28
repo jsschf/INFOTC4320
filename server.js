@@ -2,6 +2,9 @@ const express = require("express");
 
 const app = express();
 
+//Body Parser; Allows raw JSON handling
+app.use(express.json());
+
 //Root API route
 app.use("/api/animals", require("./routes"));
 
